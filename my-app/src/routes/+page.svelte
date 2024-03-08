@@ -1,5 +1,4 @@
 
-    <div class="cloud"><img src={cloud} alt="" /></div>
 <div class="container">
     
     <div class="cabinet">
@@ -36,7 +35,7 @@
         <div></div>
     </div>
     <div class="plate"></div>
-    <div class="container">
+    <div class="containerSmokeStove">
         <div class="smokeStove"></div>
         <div class="smokeStove"></div>
         <div class="smokeStove"></div>
@@ -108,11 +107,6 @@
         const cloud = document.querySelector(".cloud");
         if (smoke) {
             smoke.style.animationDuration = `${1000 / temp}s`;
-        }
-
-        if (temp === 6969) {
-            smokeStove.style.animation = "smokeStove 5s linear";
-            cloud.style.animation = "cloud 3s linear";
         }
     }
 
